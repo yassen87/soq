@@ -1,0 +1,274 @@
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   TijaraHub
+  </title>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #f8f9fa;
+        }
+        .navbar-nav .nav-link {
+            color: #000;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ff5722;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            border-radius: 0;
+        }
+        .search-bar button {
+            border-radius: 0;
+            background-color: #ff5722;
+            color: #fff;
+        }
+        .main-banner {
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .main-banner img {
+            max-width: 100%;
+            height: auto;
+        }
+        .main-banner .discount {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .main-banner .description {
+            font-size: 1.5rem;
+        }
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            font-size: 2rem;
+            color: #25d366;
+        }
+        .product-list {
+            padding: 20px;
+        }
+        .product-item {
+            text-align: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-item .product-name {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+        .product-item .product-price {
+            color: #ff5722;
+            font-size: 1.1rem;
+        }
+  </style>
+ </head>
+ <body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+     <img alt="TijaraHub Logo" height="50" src="https://storage.googleapis.com/a1aa/image/P6lWVyIWYmr0CZAXkpjNA4kfDmgkIKeQfm3Ot8GMOO8s5SOoA.jpg" width="150"/>
+    </a>
+    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon">
+     </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        معلومات عنا
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        اتصل بنا
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        مقالات
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        كن بائعا
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        كن مشتريا
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        باقيا
+       </a>
+      </li>
+     </ul>
+     <div class="search-bar">
+      <input class="form-control" placeholder="ابحث" type="text" id="search-input"/>
+      <button class="btn" type="button" onclick="searchProducts()">
+       <i class="fas fa-search"></i>
+      </button>
+     </div>
+     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        <i class="fas fa-shopping-cart"></i>
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        <i class="fas fa-user"></i>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+   <div class="container-fluid">
+    <button aria-controls="navbarCategories" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarCategories" data-bs-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCategories">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        الأغذية والمشروبات
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        أزياء واكسسوارات
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        أدوات ومستحضرات التجميل
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        المنزل والحديقة
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        أثاث
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        صنع يدوي
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        منتجات رمضانية
+       </a>
+      </li>
+      <li class="nav-item">
+       <a class="nav-link" href="#">
+        عروض جديدة
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </nav>
+  <div class="main-banner">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-6">
+      <img alt="مجموعة من المنتجات الرمضانية" height="300" src="https://storage.googleapis.com/a1aa/image/QfSqAPlGlJyWbKHzeaFDisLrz0Cg8eigtbxzKUHev3pjzlcQB.jpg" width="500"/>
+     </div>
+     <div class="col-md-6">
+      <div class="discount">
+       خصم 20%
+      </div>
+      <div class="description">
+       على منتجات مختارة
+      </div>
+      <p>
+       لا تفوت الفرصة!
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container product-list">
+   <div class="row">
+    <div class="col-md-4 product-item">
+     <img alt="منتج 1" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCkPyFmkw3eRB7TPzBg5F31Sau0mN0ZZ-74w&s" width="300"/>
+     <div class="product-name">
+      كيت كات(مقاطعه)
+     </div>
+     <div class="product-price">
+      $10.00
+     </div>
+    </div>
+    <div class="col-md-4 product-item">
+     <img alt="منتج 2" height="300" src="https://m.media-amazon.com/images/I/71aeHtq9VML.jpg" width="300"/>
+     <div class="product-name">
+      جاكور
+     </div>
+     <div class="product-price">
+      $20.00
+     </div>
+    </div>
+    <div class="col-md-4 product-item">
+     <img alt="منتج 3" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloqHL2kvFEBfQ52Nc06dKGSKOuaAg0OKDpw&s" width="300"/>
+     <div class="product-name">
+      بيج
+     </div>
+     <div class="product-price">
+      $30.00
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="whatsapp-icon">
+   <a href="https://wa.me/20XXXXXXXXX" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+   </a>
+  </div>
+  <script>
+   function searchProducts() {
+        var input = document.getElementById('search-input');
+        var searchText = 'بحث عن منتجات';
+        var i = 0;
+        
+        function typeWriter() {
+            if (i < searchText.length) {
+                input.value += searchText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);  // Adjust typing speed (100ms)
+            }
+        }
+        
+        input.value = '';  // Clear any existing text
+        typeWriter();  // Start typing effect
+    }
+  </script>
+ </body>
+</html>
