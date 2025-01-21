@@ -79,6 +79,9 @@
             color: #ff5722;
             font-size: 1.1rem;
         }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
   </style>
  </head>
  <body>
@@ -152,20 +155,148 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCategories">
      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-       <a class="nav-link" href="#">
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         الأغذية والمشروبات
        </a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">منتجات الألبان</a></li>
+        <li><a class="dropdown-item" href="#">المشروبات الغازية</a></li>
+        <li><a class="dropdown-item" href="#">الوجبات الخفيفة</a></li>
+        <li><a class="dropdown-item" href="#">الحلويات</a></li>
+       </ul>
       </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
-        أزياء واكسسوارات
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownFashion" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        أزياء وإكسسوارات
        </a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdownFashion">
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">ملابس المرأة</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">قمصان نسائي</a></li>
+          <li><a class="dropdown-item" href="#">شورت نسائي</a></li>
+          <li><a class="dropdown-item" href="#">فساتين</a></li>
+          <li><a class="dropdown-item" href="#">تنورة</a></li>
+          <li><a class="dropdown-item" href="#">طقم ملابس نسائي</a></li>
+          <li><a class="dropdown-item" href="#">بدلة نسائي</a></li>
+          <li><a class="dropdown-item" href="#">المزيد</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">ملابس رجالي</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">قمصان رجالي</a></li>
+          <li><a class="dropdown-item" href="#">شورت رجالي</a></li>
+          <li><a class="dropdown-item" href="#">ملابس داخلية وجوارب رجالي</a></li>
+          <li><a class="dropdown-item" href="#">طقم ملابس رجالي</a></li>
+          <li><a class="dropdown-item" href="#">بناطيل رجالي</a></li>
+          <li><a class="dropdown-item" href="#">المعاطف والسترات الرجالي</a></li>
+          <li><a class="dropdown-item" href="#">المزيد</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">أزياء الاطفال</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">طقم ملابس أطفال</a></li>
+          <li><a class="dropdown-item" href="#">قمصان أطفال</a></li>
+          <li><a class="dropdown-item" href="#">تنورة أطفال</a></li>
+          <li><a class="dropdown-item" href="#">شورت أطفال</a></li>
+          <li><a class="dropdown-item" href="#">بناطيل أطفال</a></li>
+          <li><a class="dropdown-item" href="#">فساتين أطفال</a></li>
+          <li><a class="dropdown-item" href="#">المزيد</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">ملابس الرضع</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">طقم ملابس للرضع</a></li>
+          <li><a class="dropdown-item" href="#">قمصان للرضع</a></li>
+          <li><a class="dropdown-item" href="#">ملابس داخلية وجوارب للرضع</a></li>
+          <li><a class="dropdown-item" href="#">ملابس قطعة واحدة للرضع</a></li>
+          <li><a class="dropdown-item" href="#">المعاطف والسترات للرضع</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">الأمتعة والحقائب والمحافظ</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">حقائب كروس وحقائب اليد</a></li>
+          <li><a class="dropdown-item" href="#">حقيبة وسط</a></li>
+          <li><a class="dropdown-item" href="#">حقائب سفر</a></li>
+          <li><a class="dropdown-item" href="#">محافظ ومشابك نقود</a></li>
+          <li><a class="dropdown-item" href="#">حقائب ظهر</a></li>
+          <li><a class="dropdown-item" href="#">حقائب عمل</a></li>
+          <li><a class="dropdown-item" href="#">المزيد</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">الملابس التقليدية والدينية</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">ملابس نسائية دينية</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">اكسسوارات الملابس</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">الأوشحة والشالات</a></li>
+          <li><a class="dropdown-item" href="#">تدفئة الذراع والأكمام</a></li>
+          <li><a class="dropdown-item" href="#">عصابات وأربطة رأس</a></li>
+          <li><a class="dropdown-item" href="#">إكسسوارات ملابس الأطفال</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">ملابس النوم و الاسترخاء</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">ملابس نوم للرجال</a></li>
+          <li><a class="dropdown-item" href="#">ملابس نوم للنساء</a></li>
+          <li><a class="dropdown-item" href="#">ملابس النوم للأطفال</a></li>
+          <li><a class="dropdown-item" href="#">ملابس النوم للرضع</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">أكسسوارات و مجوهرات</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">خواتم</a></li>
+          <li><a class="dropdown-item" href="#">سلاسل المفاتيح</a></li>
+          <li><a class="dropdown-item" href="#">أقراط الأذنين</a></li>
+          <li><a class="dropdown-item" href="#">أساور</a></li>
+          <li><a class="dropdown-item" href="#">قلادات</a></li>
+          <li><a class="dropdown-item" href="#">أساور</a></li>
+          <li><a class="dropdown-item" href="#">المزيد</a></li>
+         </ul>
+        </li>
+        <li class="dropdown-submenu">
+         <a class="dropdown-item dropdown-toggle" href="#">إكسسوارات الأحذية</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">لبيسة</a></li>
+         </ul>
+        </li>
+       </ul>
       </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBeauty" role="button" data-bs-toggle="dropdown" aria-expanded="false">
         أدوات ومستحضرات التجميل
        </a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdownBeauty">
+        <li><a class="dropdown-item" href="#">العناية الشخصية</a></li>
+        <li><a class="dropdown-item" href="#">مستحضرات التجميل</a></li>
+        <li><a class="dropdown-item" href="#">العناية بالجسم</a></li>
+        <li><a class="dropdown-item" href="#">منتجات العناية بالشعر</a></li>
+        <li><a class="dropdown-item" href="#">مزيل العرق ومضاد للتعرق</a></li>
+        <li><a class="dropdown-item" href="#">العطور</a></li>
+        <li><a class="dropdown-item" href="#">العناية بالبشرة</a></li>
+        <li><a class="dropdown-item" href="#">المزيد</a></li>
+       </ul>
+      </li>
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownHealth" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        الرعاية الصحية
+       </a>
+       <ul class="dropdown-menu" aria-labelledby="navbarDropdownHealth">
+        <li><a class="dropdown-item" href="#">الإسعافات الأولية</a></li>
+        <li><a class="dropdown-item" href="#">اللوازم والمعدات الطبية</a></li>
+        <li><a class="dropdown-item" href="#">اللياقة البدنية والتغذية</a></li>
+       </ul>
       </li>
       <li class="nav-item">
        <a class="nav-link" href="#">
@@ -238,37 +369,7 @@
     </div>
     <div class="col-md-4 product-item">
      <img alt="منتج 3" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloqHL2kvFEBfQ52Nc06dKGSKOuaAg0OKDpw&s" width="300"/>
-     <div class="product-name">
-      بيج
+     <div class="بيج شبس">
+        بيج شبس 
+        70$
      </div>
-     <div class="product-price">
-      $30.00
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="whatsapp-icon">
-   <a href="https://wa.me/20XXXXXXXXX" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-   </a>
-  </div>
-  <script>
-   function searchProducts() {
-        var input = document.getElementById('search-input');
-        var searchText = 'بحث عن منتجات';
-        var i = 0;
-        
-        function typeWriter() {
-            if (i < searchText.length) {
-                input.value += searchText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);  // Adjust typing speed (100ms)
-            }
-        }
-        
-        input.value = '';  // Clear any existing text
-        typeWriter();  // Start typing effect
-    }
-  </script>
- </body>
-</html>
